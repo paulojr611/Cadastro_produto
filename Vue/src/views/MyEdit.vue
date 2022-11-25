@@ -1,5 +1,6 @@
 <template>
     <main>
+    <div>
         <container>
             <div class="row cards">
                 <div class="row">
@@ -57,6 +58,7 @@
                 </div>
             </div>
         </container>
+        </div>
     </main>
 </template>
 

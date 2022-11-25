@@ -1,9 +1,9 @@
 <template>
     <main>
+       
         <div>
             <container>
                 <div class="row cards">
-
                     <div class="row">
                         <div class="col glass">
                             <div>
@@ -93,7 +93,7 @@ export default {
             if (data.codigo == undefined || data.nome == undefined || data.valor == undefined || data.estoque == undefined || data.cidade == undefined) {
                 this.mostrarToast("danger", "Existem valores vazios ou inválidos.", "Campo inválido.")
             } else {
-                this.mostrarToast("success", "Produto registrado com sucesso.", "Criação realizada.")
+                this.mostrarToast("success", "Produto registrado com sucesso.")
                 this.addProduto();
             }
         },

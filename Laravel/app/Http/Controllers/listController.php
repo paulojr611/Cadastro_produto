@@ -17,7 +17,7 @@ class listController extends Controller
     public function Busca_id($id){
         if (ListProducts::where('id', $id)->exists()) {
             $product = ListProducts::find($id);
-                return response($product, 200);
+                return response($product,200);
               } else {
                 return response()->json([
                   "message" => "Product not found."
@@ -54,7 +54,7 @@ class listController extends Controller
             ], 200);
             } else {
             return response()->json([
-                "message" => "Student not found"
+                "message" => "Product not found"
             ], 404);
             
         }

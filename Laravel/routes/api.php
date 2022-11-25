@@ -20,10 +20,10 @@ Route::get("ping", function(){
 }); 
 
 Route::get("/busca",[listController::class,"Busca"]);
-Route::get("/busca/{product}",[listController::class,"Busca_id"]);
+Route::get("/procura/{id}",[listController::class,"Busca_id"]);
 Route::post("/criar",[listController::class,"Criar"]);
 Route::post("/Editar/{product}",[listController::class,"Editar"]);
 Route::delete("/Deletar/{product}",[listController::class,"Deletar"]);
 Route::get("/cidades",[listController::class,"Cidades"]);
 
-Route::post("/tom/{product}",[listController::class,"Editar"]);
+Route::get("/tom/{id}",[listController::class,"tom"]);
